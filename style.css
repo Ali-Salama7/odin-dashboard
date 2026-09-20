@@ -154,3 +154,137 @@ input{
     font-size: 15px;
     color: white;
 }
+
+
+.main-content{
+    background-color: #e7eeee;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+h3{
+    margin-bottom: 20px;
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    width: 30rem;
+}
+
+.card::before{
+    content: '';
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    width: 7px;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.card .content h4{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.card .content p{
+    color: gray;
+}
+
+.card .logos{
+    display: flex;
+    justify-content: end;
+    margin-top: 25px;
+    filter: brightness(0) invert(0);
+    gap: 15px;
+}
+
+.card .logos img{
+    font-weight: 400;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.top-content{
+    background-color: #ffffff;
+    padding: 15px 30px;
+    width: 20rem;
+    border-radius: 10px;
+}
+
+/* .paragrahs{
+    margin-bottom: 20px;
+}
+
+.paragrahs:not(:last-child){
+    border-bottom: 1px solid #e7eeee;
+}
+
+.paragrahs h4 {
+    margin-bottom: 4px;
+}
+
+.paragrahs p {
+    margin-bottom: 20px;
+} */
+
+.profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-height: 100%;
+    box-sizing: border-box;
+    width: 20rem;
+}
+
+.accounts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 12px;
+}
+
+.accounts img {
+    width: 40px;
+    height: 40px;    
+    background-color: #f0f0f0;
+    border-radius: 50%;         
+    padding: 8px;                 
+    object-fit: contain;      
+}
+
+.accounts:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.accounts img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.accounts p {
+    margin: 0;
+    font-size: 14px;
+}
